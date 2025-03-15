@@ -14,11 +14,10 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -96,5 +95,29 @@
             <a href="Sai_Krishna_Resume.pdf" download class="btn">Download CV</a>
         </div>
     </div>
+
+    <script>
+        function openTab(tabName) {
+            let tabLinks = document.querySelectorAll(".tab-links");
+            let tabContents = document.querySelectorAll(".tab-contents");
+            
+            tabLinks.forEach(link => link.classList.remove("active-link"));
+            tabContents.forEach(content => content.classList.remove("active-tab"));
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+        
+        // Smooth scrolling functionality for navigation links
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
