@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna's Portfolio</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/minimal-logo.png" class="logo">
+                <img src="images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#header" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times"></i>
                 </ul>
+                <i class="fas fa-bars"></i>
             </nav>
             <div class="header-text">
-                <p>Data Analyst | Power BI Developer</p>
-                <h1>Hi, I'm <span>Krishna</span><br> from India</h1>
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Krishna</span><br> India</h1>
             </div>
         </div>
     </div>
-    
+
+    <!-- About Section -->
     <div id="about">
         <div class="container">
-            <h1 class="sub-title">About Me</h1>
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png.jpg" alt="User Image">
+                    <img src="images/user.png.jpg">
                 </div>
                 <div class="about-col-2">
-                    <p>I'm a passionate Data Analyst with experience in Power BI, Incorta, SQL, Python, and ETL. I specialize in transforming complex data into meaningful insights and creating interactive dashboards that drive decision-making.</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate Data Analyst who enjoys working with numbers to help people make smarter decisions...</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                         <p class="tab-links" onclick="openTab('experience')">Experience</p>
@@ -44,16 +49,16 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Power BI</span><br>Building dashboards & reports</li>
-                            <li><span>SQL</span><br>Data Management & Query Optimization</li>
-                            <li><span>Incorta</span><br>ETL & Schema Development</li>
-                            <li><span>Python</span><br>Data Analysis & Scripting</li>
+                            <li><span>Power BI</span><br>Creating & Maintaining reports.</li>
+                            <li><span>SQL</span><br>Managing & Cleaning the data.</li>
+                            <li><span>DAX</span><br>Creating meaningful insights.</li>
+                            <li><span>Incorta</span><br>Creating Reports & Doing ETL.</li>                        
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2024 - Present</span><br>Analyst at TCS</li>
-                            <li><span>2022 - 2024</span><br>Power BI & Incorta Developer at JK Technosoft</li>
+                            <li><span>2024 - Current</span><br>Analyst at TCS.</li>
+                            <li><span>2022-2024</span><br>Power BI & Incorta Developer at JK Technosoft</li>                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -65,67 +70,39 @@
             </div>
         </div>
     </div>
-    
-    <div id="portfolio">
+
+    <!-- Contact Section -->
+    <div id="contact">
         <div class="container">
-            <h1 class="sub-title">My Works</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="SIP Dashboard">
-                    <div class="layer">
-                        <h2>SIP Dashboard</h2>
-                        <p>Developed a dashboard using Power BI and Mendix Console, optimizing data management and reducing reporting time by 30%.</p>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> saitummapudik@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9553366238</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
+                    <a href="images/Sai Krishna Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="Finance Data Strategy">
-                    <div class="layer">
-                        <h2>Finance Data Strategy</h2>
-                        <p>Designed advanced data models and dashboards using Incorta, SQL, and ETL, improving insights accuracy by 40%.</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="Parts by Dealer">
-                    <div class="layer">
-                        <h2>Parts by Dealer</h2>
-                        <p>Integrated Azure Databricks with Power BI, optimizing data retrieval and visualization for dealership analytics.</p>
-                    </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="contact">
-        <div class="container">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-envelope"></i> saikrishnatmpd@gmail.com</p>
-            <p><i class="fas fa-phone"></i> 9553366238</p>
-            <a href="Sai_Krishna_Resume.pdf" download class="btn">Download CV</a>
+        <div class="copyright">
+            <p>Copyright @ Krishna. Made with <i class="fas fa-heart"></i> by Krishna</p>
         </div>
     </div>
 
-    <script>
-        function openTab(tabName) {
-            let tabLinks = document.querySelectorAll(".tab-links");
-            let tabContents = document.querySelectorAll(".tab-contents");
-            
-            tabLinks.forEach(link => link.classList.remove("active-link"));
-            tabContents.forEach(content => content.classList.remove("active-tab"));
-            
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabName).classList.add("active-tab");
-        }
-        
-        // Smooth scrolling functionality for navigation links
-        document.querySelectorAll('.nav-link').forEach(anchor => {
-            anchor.addEventListener('click', function (event) {
-                event.preventDefault();
-                const targetId = this.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
