@@ -12,10 +12,11 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="images/minimal-logo.png" class="logo">
                 <ul>
                     <li><a href="#header" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -30,30 +31,37 @@
     <div id="about">
         <div class="container">
             <h1 class="sub-title">About Me</h1>
-            <p>I'm a passionate Data Analyst with experience in Power BI, Incorta, SQL, Python, and ETL. I specialize in transforming complex data into meaningful insights and creating interactive dashboards that drive decision-making.</p>
-            <div class="tab-titles">
-                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                <p class="tab-links" onclick="openTab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>Power BI</span><br>Building dashboards & reports</li>
-                    <li><span>SQL</span><br>Data Management & Query Optimization</li>
-                    <li><span>Incorta</span><br>ETL & Schema Development</li>
-                    <li><span>Python</span><br>Data Analysis & Scripting</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>2024 - Present</span><br>Analyst at TCS</li>
-                    <li><span>2022 - 2024</span><br>Power BI & Incorta Developer at JK Technosoft</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>2021</span><br>B-Tech (ECE) at QIS Institute of Technology</li>
-                </ul>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png.jpg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <p>I'm a passionate Data Analyst with experience in Power BI, Incorta, SQL, Python, and ETL. I specialize in transforming complex data into meaningful insights and creating interactive dashboards that drive decision-making.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Power BI</span><br>Building dashboards & reports</li>
+                            <li><span>SQL</span><br>Data Management & Query Optimization</li>
+                            <li><span>Incorta</span><br>ETL & Schema Development</li>
+                            <li><span>Python</span><br>Data Analysis & Scripting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Present</span><br>Analyst at TCS</li>
+                            <li><span>2022 - 2024</span><br>Power BI & Incorta Developer at JK Technosoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B-Tech (ECE) at QIS Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
